@@ -93,7 +93,7 @@ default_properties = {
         # Path default is intentionally relative for this case.
         "trust-anchor-directory": os.path.join("etc", "certs", "CA"),
         DEFAULT_CONCURRENCY: 1,
-        AUTO_BE_NAME: "time:openindiana-%Y:%m:%d",
+        AUTO_BE_NAME: "time:xstreamos-%Y:%m:%d",
 }
 
 # Assume the repository metadata should be checked no more than once every

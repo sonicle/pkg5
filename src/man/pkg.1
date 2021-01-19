@@ -701,7 +701,7 @@ Run SMF actuators synchronously. The \fBpkg\fR(1) command will not return until 
 .ad
 .sp .6
 .RS 4n
-Run SMF actuators synchronously. If the actuators do not finish within the given \fItimeout\fR in seconds, \fBpkg\fR(1) will continue operation and exit with return code 8. In OpenIndiana timeout is ignored and this option is equivalent to \fB--sync-actuators\fR.
+Run SMF actuators synchronously. If the actuators do not finish within the given \fItimeout\fR in seconds, \fBpkg\fR(1) will continue operation and exit with return code 8. In XStreamOS timeout is ignored and this option is equivalent to \fB--sync-actuators\fR.
 .RE
 
 .RE
@@ -3211,12 +3211,12 @@ be named after the current, with an incrementing numerical suffix.
 The \fB--be-name\fR option always overrides
 this property. If template starts from "time:" prefix, remaining part is interpreted
 as string in \fBstrftime\fR(3C)-compatible format. Other values are not supported
-on OpenIndiana.
+on XStreamOS.
 
 "Examples" section for some suggested values.
 
 .sp
-Default value: \fB"time:openindiana-%Y:%m:%d"\fR
+Default value: \fB"time:xstreamos-%Y:%m:%d"\fR
 .RE
 
 .sp
@@ -4194,7 +4194,7 @@ into a new boot environment called \fItestbe\fR.
 .nf
 $ \fBpkg apply-hot-fix --be-name=testbe \e\fR
 .in +4
-\fBhttps://dlc.openindiana.org/pkg/hotfix-1234.p5p\fR
+\fBhttps://dlc.xstreamos.org/pkg/hotfix-1234.p5p\fR
 .in -4
 .fi
 .in -2
@@ -4209,7 +4209,7 @@ name and date, for example \fIomnios_r151026k_20180716\fR
 .sp
 .in +2
 .nf
-$ \fBpkg set-property auto-be-name "time:openindiana_%Y:%m:%d-%H:%M"\fR
+$ \fBpkg set-property auto-be-name "time:xstreamos_%Y:%m:%d-%H:%M"\fR
 .fi
 .in -2
 .sp
@@ -4527,4 +4527,4 @@ Interface StabilityUncommitted
 \fIAdding and Updating Software in Oracle Solaris 11.2\fR
 .sp
 .LP
-\fBhttps://github.com/OpenIndiana/pkg5/\fR
+\fBhttps://github.com/sonicle/xstream-pkg5-gate/\fR

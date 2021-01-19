@@ -26,5 +26,5 @@ set name=pkg.fmri value=pkg:/package/pkg-35@$(PKGVERS)
 set name=pkg.summary \
     value="Python 3.5 support modules for the Image Packaging System"
 set name=pkg.description \
-    value="Python 3.5 support modules for the Image Packaging System. The Image Packaging System (IPS), or pkg(5), is the software delivery system used on OpenIndiana.  This package contains the core command-line components and pkg.depotd server."
+    value="Python 3.5 support modules for the Image Packaging System. The Image Packaging System (IPS), or pkg(5), is the software delivery system used on XStreamOS.  This package contains the core command-line components and pkg.depotd server."
 set name=pkg.obsolete value=true

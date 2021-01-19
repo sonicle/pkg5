@@ -27,7 +27,7 @@
 set name=pkg.fmri value=pkg:/package/pkg@$(PKGVERS)
 set name=pkg.summary value="Image Packaging System"
 set name=pkg.description \
-    value="The Image Packaging System (IPS), or pkg(5), is the software delivery system used on OpenIndiana.  This package contains the core command-line components and pkg.depotd server."
+    value="The Image Packaging System (IPS), or pkg(5), is the software delivery system used on XStreamOS.  This package contains the core command-line components and pkg.depotd server."
 set name=info.classification \
     value=org.opensolaris.category.2008:System/Packaging
 set name=org.opensolaris.smf.fmri \

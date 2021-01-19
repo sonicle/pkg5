@@ -219,7 +219,7 @@ An example ``parent`` dependency is::
 ``incorporate``
 ```````````````
 
-The ``incorporate`` dependency is heavily used in OpenIndiana to ensure that
+The ``incorporate`` dependency is heavily used in XStreamOS to ensure that
 compatible versions of software are installed together.
 
 The basic mechanism is like that of an ``optional`` dependency, except
@@ -268,7 +268,7 @@ above, packages can define the ways in which they are allowed to be upgraded.
 In general, we often desire that a group of packages installed on a system
 be supported and upgraded as a group: Either all packages in the group are
 updated, or none of the packages in the group are updated. As mentioned earlier,
-this is the reason for using the ``incorporate`` dependency in OpenIndiana.
+this is the reason for using the ``incorporate`` dependency in XStreamOS.
 
 The following three partial package manifests show the relationship
 between the ``foo`` and ``bar`` packages and the ``myincorp`` incorporation

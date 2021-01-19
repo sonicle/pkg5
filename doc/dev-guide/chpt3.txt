@@ -44,7 +44,7 @@ are of three types:
          global zone as defined by dependencies in the packages;
 
   User
-         not yet fully functional for OpenIndiana.
+         not yet fully functional for XStreamOS.
 
 In general, images are created or cloned by other software (installers,
 |beadm|, |zonecfg|, etc) rather than directly by the user.  
@@ -57,9 +57,9 @@ packages.  Every package is represented by a *fault management resource
 identifier* (FMRI), consisting of a publisher, a name, and a version, with
 the scheme ‘``pkg``’.  For example::
 
-    pkg://openindiana.org/system/library@0.5.11,5.11-2018.0.0.18233:20190417T022656Z
+    pkg://sonicle.com/system/library@0.5.11,5.11-2018.0.0.18233:20190417T022656Z
 
-Here, ‘``openindiana.org``’ is the publisher, ‘``system/library``’ is the package
+Here, ‘``sonicle.com``’ is the publisher, ‘``system/library``’ is the package
 name, and ‘``0.5.11,5.11-2018.0.0.18233:20190417T022656Z``’ is the version.
 
 Package names are hierarchical with an arbitrary number of components
@@ -120,7 +120,7 @@ For a component with its own development life cycle, this sequence
 is the dotted release number, such as ‘``2.4.10``’.
 
 The second part, which if present must follow a comma, is the build
-version.  OpenIndiana uses this to denote the release of the OS for
+version.  XStreamOS uses this to denote the release of the OS for
 which the package was compiled.
 
 The third part, which if present must follow a dash, is the branch version,
@@ -151,7 +151,7 @@ fixes, etc.
 A version can also be the token ‘``latest``’, which is substituted for the
 latest version known.
 
-We discuss how OpenIndiana implements versioning in *Chapter 13*.
+We discuss how XStreamOS implements versioning in *Chapter 13*.
 
 Publisher
 ~~~~~~~~~
@@ -526,7 +526,7 @@ Set Actions
                            the ``pkg.fmri`` version.
 
      Some additional informational attributes, as well as some used by
-     OpenIndiana are described in *Chapter 13*.
+     XStreamOS are described in *Chapter 13*.
 
      An example of a ``set`` action is::
 

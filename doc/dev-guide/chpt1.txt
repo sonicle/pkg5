@@ -51,7 +51,7 @@ Principle IPS design concepts and goals include:
   correctly installed as defined by the author (publisher) of the
   package; such a check should not be spoofable.
 
-* Incorporate mechanisms to allow for the easy virtualization of OpenIndiana 
+* Incorporate mechanisms to allow for the easy virtualization of XStreamOS 
   at a variety of levels - and zones in particular.
 
 * Reduce the effort required to generate patches/upgrades for existing
@@ -68,7 +68,7 @@ These goals led fairly directly to the following ideas:
 
   This means that:
 
-       * OpenIndiana requires ZFS as the root file system; zone
+       * XStreamOS requires ZFS as the root file system; zone
          file systems need to be on ZFS as well.
 
        * Users can create as many boot environments as desired.
@@ -168,7 +168,7 @@ Several idioms are employed to facilitate software self-assembly:
       While IPS allows for the set of known action types to be extended in the
       packaging system, during development we have found that the action types
       delivered at present are sufficient for all packaged software in
-      OpenIndiana. It is not expected that package developers will need to
+      XStreamOS. It is not expected that package developers will need to
       create new action types.
 
       Actions are discussed in more detail in *Chapter 3*.
@@ -186,7 +186,7 @@ Several idioms are employed to facilitate software self-assembly:
       complete configuration file before reading it.
 
       A good example of this is the ``/etc/user_attr`` configuration file, used
-      by OpenIndiana to configure extended attributes for roles and users on
+      by XStreamOS to configure extended attributes for roles and users on
       the system.
 
       Special service ``svc:/system/rbac:default`` now can be used to regenerate
@@ -231,7 +231,7 @@ produce a good set of packages.
 Naming Your Package
 ~~~~~~~~~~~~~~~~~~~
 
-OpenIndiana uses a hierarchical naming strategy for IPS packages.  Wherever
+XStreamOS uses a hierarchical naming strategy for IPS packages.  Wherever
 possible, design your package names to fit into the same scheme. Try to keep the
 last part of your package name reasonably unique such that ``pkg install
 <name>`` doesn't report conflicts.

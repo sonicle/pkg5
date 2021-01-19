@@ -40,7 +40,7 @@ the package manifest with the correct *actuator* in order to cause that system
 change to occur.
 
 As discussed in *Chapter 1*, some system changes are needed to employ the
-*software self-assembly* concept used by OpenIndiana and IPS, but system
+*software self-assembly* concept used by XStreamOS and IPS, but system
 changes are not limited to this role.
 
 We'll discuss the available actuators in the next section and then provide some

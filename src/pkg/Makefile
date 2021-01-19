@@ -31,14 +31,14 @@ PLATNUM           = 0
 #	hg tags | \
 #	nawk '$$1 ~ /^s11u$(UPDATENUM)b[0-9]*/ {print substr($$1, 7) + 0; exit}'
 #BUILDID           = $(BUILDID.cmd:sh)
-BUILDID           = 151
+BUILDID           = 154
 NIGHTLYID:sh      = hg parents --template '{rev}' 2>/dev/null || git rev-list --all | wc -l | sed s/\ //g
 CHANGESET:sh      = hg id -i 2>/dev/null || git log --pretty=format:'%h' -1
 PKGVERS_BRANCH    = \
 	$(PKGVERS_COMPONENT).$(UPDATENUM).$(SRUNUM).$(PLATNUM).$(BUILDID).$(NIGHTLYID)
 #PKGVERS           = $(PKGVERS_COMPONENT),$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
 # XXX hardcode for now
-BUILD_VERSION     = $(PKGVERS_BUILTON)-0.151.1.8.1
+BUILD_VERSION     = $(PKGVERS_BUILTON)-2020.1.1.0
 PKGVERS           = $(PKGVERS_COMPONENT),$(BUILD_VERSION)
 ARCH              = $(TARGET_ARCH:-%=%)
 REV:sh            = date +%Y.%m.%d.%H.%M.%S
@@ -48,8 +48,8 @@ PWD:sh            = pwd
 PKGDEST           = $(PWD)/../../packages/$(ARCH)
 PKGROOT           = $(PWD)/../../proto/root_$(ARCH)
 
-PKGPUBLISHER      = pkg5-nightly
-PKGPUBLISHER_LOCALIZABLE      = pkg5-localizable
+PKGPUBLISHER      = sonicle.com
+PKGPUBLISHER_LOCALIZABLE      = sonicle.com-localizable
 
 POUND_SIGN:sh     = echo \\043
 PUBLISHALL        = $(POUND_SIGN)

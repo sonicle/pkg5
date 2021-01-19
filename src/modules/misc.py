@@ -119,7 +119,7 @@ def get_release_notes_url():
 
         # TBD: replace with a call to api.info() that can return a "release"
         # attribute of form YYYYMM against the SUNWsolnm package
-        return "https://docs.openindiana.org/release-notes/latest-changes/"
+        return "https://docs.xstreamos.org/release-notes/latest-changes/"
 
 def time_to_timestamp(t):
         """convert seconds since epoch to %Y%m%dT%H%M%SZ format"""

@@ -5,7 +5,7 @@ RANDFILE                = $ENV::HOME/.rnd
 default_ca      = CA_default
 
 [ CA_default ]
-dir             = /export/home/alp/srcs/oi-userland/components/openindiana/pkg/pkg/src/tests/ro_data/signing_certs/produced
+dir             = /data/sources/sonicle/xstream-pkg5-gate/src/tests/ro_data/signing_certs/produced
 crl_dir         = $dir/crl
 database        = $dir/index
 serial          = $dir/serial
